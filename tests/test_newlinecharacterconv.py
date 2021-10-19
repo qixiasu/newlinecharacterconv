@@ -5,7 +5,7 @@
 
 import unittest
 
-from newlinecharacterconv import newlinecharacterconv
+from newlinecharacterconv import lineconv
 
 
 class TestNewlinecharacterconv(unittest.TestCase):
