@@ -9,7 +9,7 @@ def main():
     parser = argparse.ArgumentParser(description='换行符转换',prog='换行符转换')
         #可传入多个文件，生成一个文件名列表
     parser.add_argument('file',nargs='+',help='源文件')
-    parser.add_argument('-v', '--version', action="version", version=version, help="版本信息")
+    parser.add_argument('-v', '--version', action="version", version='文件换行符转换 %s' % version, help="版本信息")
     args = parser.parse_args()
     crlf_to_lf(args.file)
     return 0
